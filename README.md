@@ -9,3 +9,13 @@
 ## Pull from Docker Hub on any machine
 
 `docker run -p 4000:80 henleydr/get-started:part2`
+
+## Build swarm
+
+1. `docker swarm init`
+2. `docker stack deploy -c docker-compose.yml getstartedlab`
+
+## Take down swarm
+
+1. `docker stack rm getstartedlab`
+1. `docker swarm leave --force`
